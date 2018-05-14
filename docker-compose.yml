@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  notebook:
+    build: ./notebook
+    ports:
+      - "8888:8888"
+    links:
+      - mongo
+  mongo:
+    build: ./mongo
+    ports:
+      - "27017:27017"
+
