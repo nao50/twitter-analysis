@@ -1,6 +1,8 @@
 FROM jupyter/scipy-notebook:latest
 
 RUN pip install requests_oauthlib pymongo
-ADD --chown=$NB_USER:$NB_USER ./twitter-analysis.ipynb /home/$NB_USER/work/
-
+ADD ./twitter-analysis.ipynb /home/$NB_USER/work/
+USER root
+RUN chmod 777 /home/$NB_USER/work/twitter-analysis.ipynb
+USER $NB_UID
 
