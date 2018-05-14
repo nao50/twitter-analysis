@@ -4,7 +4,7 @@ You can select the word you want to search and analyze the tweeted time distribu
 
 ## Getting Started
 
-```bash
+```
 $ git clone https://github.com/naoyamaguchi/twitter-analysis.git
 $ cd twitter-analysis
 $ docker-compose up -d
