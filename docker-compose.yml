@@ -11,5 +11,9 @@ services:
       - "8888:8888"
     links:
       - mongo
+    environment:
+      - GRANT_SUDO=yes
+    user:
+      - root
 
 
