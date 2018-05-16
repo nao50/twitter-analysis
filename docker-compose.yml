@@ -13,7 +13,6 @@ services:
       - mongo
     environment:
       - GRANT_SUDO=yes
-    user:
-      - root
+    user: root
 
 
